@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request Form</title>
+        <style>
+            .pickup, .destination {
+                font-family: Arial;
+                display: block;
+                margin: 5px;
+                width: 219px;
+                padding: 7px;
+                font-size: 8px;
+                background-color: rgba(214, 211, 211, 0.382);
+                border: none;
+                margin-right: 0;
+                margin-left: 250px;
+                margin-top: 0;
+                outline: none;
+            }
+
+            .destination {
+                margin-bottom: 20px;
+            }
+
+            .request-button, .schedule-button {
+                display: inline-block;
+                text-align: center;
+                padding-right: 10px;
+                font-size: 8px;
+                height: 25px;
+                
+            }
+
+            .request-button {
+                margin-left: 250px;
+                background-color: black;
+                color: white;
+                border: none;
+                width: 80px
+                
+            }
+
+            .schedule-button {
+                background-color: rgba(214, 211, 211, 0.382);
+                color: black;
+                border: none;
+                width: 100px;
+                margin-left: 8px;
+            }
+            .heading {
+                font-family: Arial;
+                text-align: center;
+                font-size: 20px;
+                color: black;
+                width: 730px;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <p class="heading">Request a ride now</p>
+        <form action="https://example.com/submit" method="POST">
+            <input type="text" class="pickup" placeholder="Enter pickup location" required>
+            <input type="text" class="destination" placeholder="Enter destination" required>
+            <button type="submit" class="request-button">Request now</button>
+            <button type="submit" class="schedule-button">Schedule for later</button>
+    </body>
+</html>

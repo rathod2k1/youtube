@@ -30,15 +30,16 @@
 
 .search-bar {
   flex: 1;
-  height: 37px;
+  height: 36px;
   padding-left: 10px;
   font-size: 16px;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(192, 192, 192);
-  border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .search-bar::placeholder {
@@ -54,7 +55,8 @@
   border-style: solid;
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
-  border-radius: 1px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .search-button,
@@ -166,4 +168,9 @@
 
 .youtube-logo {
   height: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
 }
